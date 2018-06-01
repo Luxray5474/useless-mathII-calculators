@@ -1,13 +1,13 @@
 {
-  "name": "calc",
+  "name": "useless-mathii-calculators",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Luxray5474",
+  "license": "MIT",
   "dependencies": {
     "colors": "^1.3.0",
     "nodepythagorean": "^1.0.3",
