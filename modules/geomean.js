@@ -5,5 +5,5 @@ export default function calc(input) {
   inp = input.split(", ");
   sqrt = inp[2].split(" ")
   sqrtans = Math.sqrt(inp[0] * inp[1])
-  console.log(sqrtans + "\n" + (sqrt[0] + "√" + sqrt[1] + " = " + (sqrt[0] * Math.sqrt(sqrt[1]))));
+  console.log((sqrtans + "\n" + (sqrt[0] + "√" + sqrt[1] + " = " + (sqrt[0] * Math.sqrt(sqrt[1])))).green);
 }
