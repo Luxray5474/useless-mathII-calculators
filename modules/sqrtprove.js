@@ -2,7 +2,7 @@ const colors = require("colors");
 
 export default function calc(input) {
     console.log(("Enter the decimal and radical form you want to prove equal.\n").yellow + ("[decimal form], [radical form]\n").gray);
-    inp = input.split(" ");
+    inp = input.split(", ");
     sqrt = inp[1].split(" ");
     anssqrt = (sqrt[0] * (Math.sqrt(sqrt[1])));
     console.log(sqrt[0] + "√" + sqrt[1] + " = " + anssqrt);
