@@ -7,7 +7,7 @@ const anglefind = require('./modules/anglefind.js');
 const geomean = require('./modules/geomean.js');
 const pytheorem = require('./modules/pytheorem.js');
 const sqrtconvert = require('./modules/sqrtconvert.js');
-const varfindnoop = require('./modules/varfindnoop');
+const varfinddou = require('./modules/varfinddou.js');
 const varfindx = require('./modules/varfindx.js');
 const varfindxy = require('./modules/varfindxy.js');
 const help = require('./modules/help.js');
@@ -23,7 +23,7 @@ rl.question(('Type in your command. Type \'help\' to see all available commands.
     inp = answer.split(" ");
     passableInp = inp.slice(2);
 
-    if(inp[1] == 'help') {
-        help.help();
+    if(inp[0] == 'help') {
+        help();
     }
 });

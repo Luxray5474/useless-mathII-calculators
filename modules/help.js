@@ -22,4 +22,5 @@ module.exports = function help() {
     console.log(('  [n x ± n], [n x ± n], [x]').gray);
     console.log(('vfxy').bgYellow.black);
     console.log(('  [n x ± n y], [n x ± n y], [x], [y]').gray);
+    return;
 };
