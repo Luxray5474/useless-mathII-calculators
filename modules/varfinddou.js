@@ -1,5 +1,6 @@
 const colors = require('colors');
-export default function calc(input) {
+
+module.exports = function calc(input) {
     var mainsplit = input.split(", ");
     var eq1 = mainsplit[0].split(" ");
     var eq2 = mainsplit[1].split(" ");
