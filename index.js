@@ -10,6 +10,7 @@ const sqrtconvert = require('./modules/sqrtconvert.js');
 const varfindnoop = require('./modules/varfindnoop');
 const varfindx = require('./modules/varfindx.js');
 const varfindxy = require('./modules/varfindxy.js');
+const help = require('./modules/help.js');
 
 //that JSON with the stuff in it
 
@@ -22,5 +23,7 @@ rl.question(('Type in your command. Type \'help\' to see all available commands.
     inp = answer.split(" ");
     passableInp = inp.slice(2);
 
-    if(inp[1] == 'help') {}
+    if(inp[1] == 'help') {
+        help.help();
+    }
 });
