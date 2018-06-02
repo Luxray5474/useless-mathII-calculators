@@ -16,24 +16,26 @@ const help = require('./modules/help.js');
 
 const rl = readline.createInterface({
     input: process.stdin,
-    output: process.stdout
+    output: process.stdout,
+    terminal: false
 });
 
 new function main() {
     rl.question(('Type in your command. Type \'help\' to see all available commands. \n').yellow , (answer) => {
         inp = answer.split(" ");
-        passableInp = inp.slice(2);
+        arg1 = ((((answer.split(", ")).slice(0, 1)).toString()).split(" ")).slice(1, 2);
+        passableInp = (arg1 + ", " + inp.slice(2)).toString();
 
         if(inp[0] == 'help') {
             help();
-            rl.close();
             main();
+            return;
         }
 
-        if(inp[0] == 'anglefind') {
-            anglefind(pasableInp);
-            rl.close();
+        if(inp[0] == 'anglef') {
+            anglefind(passableInp);
             main();
+            return;
         }
     });
 };
