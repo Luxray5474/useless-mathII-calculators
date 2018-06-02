@@ -4,7 +4,7 @@ const colors = require('colors');
 
 //local modules
 const anglefind = require('./modules/anglefind.js');
-const geomean = require('.modules/geomean.js');
+const geomean = require('./modules/geomean.js');
 const pytheorem = require('./modules/pytheorem.js');
 const sqrtconvert = require('./modules/sqrtconvert.js');
 const sqrtprove = require('./modules/sqrtprove.js');
