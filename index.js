@@ -21,21 +21,29 @@ const rl = readline.createInterface({
 });
 
 new function main() {
-    rl.question(('Type in your command. Type \'help\' to see all available commands. \n').yellow , (answer) => {
+    rl.question(('Type in your command. Type \'help\' to see all available commands. \n').yellow + "> " , (answer) => {
         inp = answer.split(" ");
-        arg1 = ((((answer.split(", ")).slice(0, 1)).toString()).split(" ")).slice(1, 2);
+        arg1 = ((((answer.split(", ")).slice(0, 1)).toString()).split(" ")).slice(1, 2); 
+        //splits it by ", ", takes the first element e.g. "anglef 80", splits that by " ", then cuts out the first element "anglef" 
         passableInp = (arg1 + ", " + inp.slice(2)).toString();
+        //adds the separated first argument to the rest of the arguments
 
-        if(inp[0] == 'help') {
+        if(["help", "anglef", "gmean", "pythag", "sqconv", "vfdou", "vfx", "vfxy"].includes(inp[0])) {
+            if(inp[0] == 'help') {
             help();
             main();
             return;
-        }
+            }
 
         if(inp[0] == 'anglef') {
             anglefind(passableInp);
             main();
             return;
-        }
+            }
+        } else {
+            console.log(('Invalid command! Type \'help\' to list available commands.').red);
+            main();
+            return;
+        };
     });
 };
