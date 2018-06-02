@@ -29,5 +29,11 @@ new function main() {
             rl.close();
             main();
         }
+
+        if(inp[0] == 'anglefind') {
+            anglefind(pasableInp);
+            rl.close();
+            main();
+        }
     });
 };
