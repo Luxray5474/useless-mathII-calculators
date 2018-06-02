@@ -19,11 +19,15 @@ const rl = readline.createInterface({
     output: process.stdout
 });
 
-rl.question(('Type in your command. Type \'help\' to see all available commands. \n').yellow , (answer) => {
-    inp = answer.split(" ");
-    passableInp = inp.slice(2);
+new function main() {
+    rl.question(('Type in your command. Type \'help\' to see all available commands. \n').yellow , (answer) => {
+        inp = answer.split(" ");
+        passableInp = inp.slice(2);
 
-    if(inp[0] == 'help') {
-        help();
-    }
-});
+        if(inp[0] == 'help') {
+            help();
+            rl.close();
+            main();
+        }
+    });
+};
