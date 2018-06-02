@@ -1,7 +1,6 @@
 const colors = require('colors');
 
 export default function calc(input) {
-    console.log(("Type in the equations and variables you would like to prove.\n").yellow + ("[n x ± n y], [n x ± n y], [x], [y]\n").gray);
     var mainsplit = input.split(", ");
     var eq1 = mainsplit[0].split(" ");
     var eq2 = mainsplit[1].split(" ");
