@@ -9,19 +9,16 @@ module.exports = function calc(input) {
     var testVar2 = mainSplitElement1[1];
 
     if(eq1[2] === '-') {
-        var ans1 = parseInt(eq1[0]) * parseInt(testVar) - parseInt(eq1[3]);
-        console.log(colors.green(ans1));
+        console.log(colors.green("x ".blue + "result: " + (parseInt(eq1[0]) * parseInt(testVar) - parseInt(eq1[3]))));
     } else {
-        var ans1 = parseInt(eq1[0]) * parseInt(testVar) + parseInt(eq1[3]);
-        console.log(colors.green(ans1));
-    }
+        console.log("x ".blue + "result: " + (colors.green(parseInt(eq1[0]) * parseInt(testVar) + parseInt(eq1[3]))));
+    };
 
     if(eq2[2] === '-') {
-        var ans2 = parseInt(eq2[0]) * parseInt(testVar2) - parseInt(eq2[3]);
-        console.log(colors.green(ans2));
+        console.log(colors.green("y ".red + "result: " + (parseInt(eq2[0]) * parseInt(testVar2) - parseInt(eq2[3]))));
     } else {
-        var ans2 = parseInt(eq2[0]) * parseInt(testVar2) + parseInt(eq2[3]);
-        console.log(colors.green(ans2));
-    }
+        console.log("y ".red + "result: " + (colors.green(parseInt(eq2[0]) * parseInt(testVar2) + parseInt(eq2[3]))));
+    };
+
     return;
 }
