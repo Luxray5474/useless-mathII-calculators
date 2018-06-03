@@ -60,7 +60,9 @@ new function main() {
             }
 
             if(inp[0] == 'vfdou') {
-                console.log(passableInp);
+                varfinddou(passableInp);
+                main();
+                return;
             }
         } else {
             console.log(('Invalid command! Type \'help\' to list available commands.').red);
