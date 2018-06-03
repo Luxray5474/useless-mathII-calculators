@@ -58,6 +58,10 @@ new function main() {
                 main();
                 return;
             }
+
+            if(inp[0] == 'vfdou') {
+                console.log(passableInp);
+            }
         } else {
             console.log(('Invalid command! Type \'help\' to list available commands.').red);
             main();
