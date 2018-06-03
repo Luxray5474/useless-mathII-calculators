@@ -70,6 +70,13 @@ new function main() {
                 main();
                 return;
             }
+
+            if(inp[0] == 'vfx') {
+                console.log(passableInp);
+                main();
+                return;
+            }
+        
         } else {
             console.log(('Invalid command! Type \'help\' to list available commands.').red);
             main();
