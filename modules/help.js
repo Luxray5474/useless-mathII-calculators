@@ -16,6 +16,9 @@ module.exports = function help() {
     console.log(('sqconv').bgYellow.black);
     console.log(('  Converts a square root from its radical form to its decimal form.'));
     console.log(('  [multiplicant], [radical]').gray);
+    console.log(('fdiv').bgYellow.black);
+    console.log(('  Divides the factorial of the 2nd number by that of the 1st number.'));
+    console.log(('  [n1], [n2]').gray);
     console.log(('vfdou').bgYellow.black);
     console.log(('  [x], [y], [n x ± n], [n y ± n]').gray);
     console.log(('vfx').bgYellow.black);

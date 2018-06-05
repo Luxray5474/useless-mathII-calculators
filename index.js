@@ -11,6 +11,7 @@ const varfinddou = require('./modules/varfinddou.js');
 const varfindx = require('./modules/varfindx.js');
 const varfindxy = require('./modules/varfindxy.js');
 const help = require('./modules/help.js');
+const factorial = require('./modules/factorial.js');
 
 //that JSON with the stuff in it
 
@@ -28,7 +29,7 @@ new function main() {
         passableInp = (arg1 + ", " + inp.slice(2)).toString();
         //adds the separated first argument to the rest of the arguments
 
-        if(["help", "anglef", "gmean", "pythag", "sqconv", "vfdou", "vfx", "vfxy"].includes(inp[0])) {
+        if(["help", "anglef", "gmean", "pythag", "sqconv", "vfdou", "vfx", "vfxy", "fdiv"].includes(inp[0])) {
             if(inp[0] == 'help') {
                 help();
                 main();
@@ -72,7 +73,13 @@ new function main() {
             }
 
             if(inp[0] == 'vfx') {
-                console.log(passableInp);
+                varfindx(passableInp);
+                main();
+                return;
+            }
+
+            if(inp[0] == 'fdiv') {
+                factorial(passableInp);
                 main();
                 return;
             }
