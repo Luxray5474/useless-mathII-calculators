@@ -9,18 +9,18 @@ module.exports = function calc(input) {
 
     if(eq1[2] === '-') {
         var ans1 = parseInt(eq1[0]) * parseInt(testvar) - parseInt(eq1[3]);
-        console.log("x ".blue + "result: " + colors.green(ans1));
+        console.log("1st ".blue + "result: " + colors.green(ans1));
     } else {
         var ans1 = parseInt(eq1[0]) * parseInt(testvar) + parseInt(eq1[3]);
-        console.log("x ".blue + "result: " + colors.green(ans1));
+        console.log("1st ".blue + "result: " + colors.green(ans1));
     }
 
     if(eq2[2] === '-') {
         var ans2 = parseInt(eq2[0]) * parseInt(testvar) - parseInt(eq2[3]);
-        console.log("y ".red + "result: " + colors.green(ans2));
+        console.log("2nd ".red + "result: " + colors.green(ans2));
     } else {
         var ans2 = parseInt(eq2[0]) * parseInt(testvar) + parseInt(eq2[3]);
-        console.log("y ".red + "result: " + colors.green(ans2));
+        console.log("2nd ".red + "result: " + colors.green(ans2));
     }
     return;
 }
