@@ -26,7 +26,7 @@ new function main() {
         inp = answer.split(" ");
         arg1 = ((((answer.split(", ")).slice(0, 1)).toString()).split(" ")).slice(1, 2); 
         //splits it by ", ", takes the first element e.g. "anglef 80", splits that by " ", then cuts out the first element "anglef" 
-        passableInp = (arg1 + ", " + inp.slice(2)).toString();
+        passableInp = (arg1 + ",," + inp.slice(2)).toString();
         //adds the separated first argument to the rest of the arguments
 
         if(["help", "anglef", "gmean", "pythag", "sqconv", "vfdou", "vfx", "vfxy", "fdiv"].includes(inp[0])) {
